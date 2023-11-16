@@ -37,7 +37,7 @@ const handleLogout = () => {
             <a href="#">laptops</a>
             <a href="#">fragrances</a>
             <a href="#">skincare</a>
-            <a href="#">groceries</a>
+            <a href="#">gro</a>
             {/* <a href="#">home-decoration</a> */}
           </div>
         </div>
