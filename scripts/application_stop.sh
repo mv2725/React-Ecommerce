@@ -1,4 +1,4 @@
 #!/bin/bash
-
-pm2 stop "hello"
-pm2 delete "hello"
+#Stopping existing node servers
+echo "Stopping any existing node servers"
+pkill node
