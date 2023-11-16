@@ -1,14 +1,18 @@
-version: 0.0
-os: linux
+version: 1.0
+os: ubuntu
 files:
   - source: /
-    destination: /var/www/html/
+    destination: /home/ubuntu/express-app
 hooks:
+  ApplicationStop:
+    - location: scripts/application_stop.sh
+      timeout: 300
+      runas: ubuntu
   BeforeInstall:
-    - location: scripts/install_dependencies
+    - location: scripts/before_install.sh
       timeout: 300
-      runas: root
-    - location: scripts/start_server
+      runas: ubuntu
+  ApplicationStart:
+    - location: scripts/application_start.sh
       timeout: 300
-      runas: root
-  
+      runas: ubuntu
