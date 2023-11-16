@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #give permission for everything in the express-app directory
-sudo chmod -R 777 /home/ubuntu/React-Ecommerce
+sudo chmod -R 777 /home/ec2-user/React-Ecommerce
 
 #navigate into our working directory where we have all our github files
-cd /home/ubuntu/React-Ecommerce
+cd /home/ec2-user/React-Ecommerce
 
 
 

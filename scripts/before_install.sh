@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR="/home/ubuntu/React-Ecommerce"
+DIR="/home/ec2-user/React-Ecommerce"
 if [ -d "$DIR" ]; then
   echo "${DIR} exists"
 else
