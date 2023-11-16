@@ -1,15 +1,20 @@
 #!/bin/bash
 
-#download node and npm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-. ~/.nvm/nvm.sh
-nvm install node
+# Update package lists
+sudo apt update
 
-#create our working directory if it doesnt exist
-DIR="/home/ec2-user/React-Ecommerce"
-if [ -d "$DIR" ]; then
-  echo "${DIR} exists"
-else
-  echo "Creating ${DIR} directory"
-  mkdir ${DIR}
-fi
+# Install necessary dependencies
+sudo apt install -y curl wget build-essential
+
+# Install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+
+# Load NVM into the current shell session
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Install Node.js (adjust the version if needed)
+nvm install --lts
+
+# Set the default Node.js version
+nvm alias default node
