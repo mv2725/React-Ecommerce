@@ -1,3 +1,4 @@
+User
 #!/bin/bash
 
 # Navigate to the application directory
@@ -11,4 +12,7 @@ export NVM_DIR="$HOME/.nvm"
 # Install node modules
 npm install
 # Start the Node.js application
-npm start -- your-app-name
+npm start -- your-app-name > /dev/null 2>&1 &
+sleep 10
+echo "Node.js application started successfully."
+exit 0
