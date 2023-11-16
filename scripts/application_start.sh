@@ -11,4 +11,4 @@ export NVM_DIR="$HOME/.nvm"
 # Install node modules
 npm install
 # Start the Node.js application
-npm start
+npm start -- your-app-name
