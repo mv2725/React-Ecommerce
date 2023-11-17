@@ -31,7 +31,7 @@ function LoginF({ authenticate }) {
             <h3 className="login-head">LOGIN HERE--</h3>
               <div className="emailpass">
               <div className="email-container">
-              <label className="login-head">Enter Email:</label><br/>
+              <label className="login-head">Type Your Email:</label><br/>
                 <input
                   className="login-button-inut email"
                   type="text"
