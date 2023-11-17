@@ -28,7 +28,7 @@ function LoginF({ authenticate }) {
         <div className="Login-form">
           <form className="loginform">
             <div className="form-container">
-            <h3 className="login-head">LOGIN HERE-!!</h3>
+            <h3 className="login-head">LOGIN page HERE-!!</h3>
               <div className="emailpass">
               <div className="email-container">
               <label className="login-head">Type Your Email:</label><br/>
