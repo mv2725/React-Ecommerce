@@ -34,7 +34,7 @@ const handleLogout = () => {
           <button className="dropbtn">Filters</button>
           <div className="dropdown-content">
             <a href="#">smartphones</a>
-            <a href="#">laptops</a>
+            <a href="#">laptopsss</a>
             <a href="#">fragrances</a>
             <a href="#">skincare</a>
             <a href="#">gro</a>
